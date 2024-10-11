@@ -58,7 +58,7 @@ live_config_reload = true
 # args = ["-l"]
 
 [shell]
-program = "/usr/bin/bash"
+program = "/usr/bin/zsh"
 args = ["-l"]
 
 
