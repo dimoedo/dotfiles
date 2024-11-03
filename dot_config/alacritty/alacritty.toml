@@ -200,8 +200,8 @@ multiplier = 3
 # Default: true
 
 [font]
-normal = { family = "shuretechmono", style = "Regular" }
-size = 9
+normal = { family = "MesloLGLDZ Nerd Font", style = "Regular" }
+size = 11
 offset.x = 4
 builtin_box_drawing = true 
 

@@ -1,6 +1,6 @@
 style=/home/dimoedo/.config/wofi/style.css
-xoffset=400
-yoffset=100
+xoffset=725
+yoffset=200
 show=drun
 width=450
 height=475
