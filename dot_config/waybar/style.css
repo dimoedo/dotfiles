@@ -47,7 +47,7 @@ tooltip {
 	color: #A4B9EF;
 }
 
-#clock, #battery, #pulseaudio, #workspaces, #mpd  {
+#custom-power, #clock, #battery, #pulseaudio, #workspaces, #mpd{
 	padding: 2px 10px;
     background: #332E41;
     margin-top: 5px;
@@ -63,7 +63,7 @@ tooltip {
     margin-bottom: 5px;
 }
 
-#clock {
+#custom-power {
     padding-right: 15px;
     margin-right: 5px;
     border-radius: 0px 15px 15px 0px;

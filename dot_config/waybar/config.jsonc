@@ -1,10 +1,9 @@
 {
   "position": "top",
   "modules-left": ["hyprland/workspaces"],
-  "modules-center": ["custom/spotify"],
-  "modules-right": ["network", "custom/vpn", "pulseaudio", "battery", "clock"],
+  "modules-right": ["network", "pulseaudio", "battery", "clock", "custom/power"],
   // Modules configuration
-  "sway/workspaces": {
+  "hyprlan/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
     "format": "{icon}",
@@ -23,25 +22,8 @@
     "format-icons": {
       "default": " ",
       "urgent": " ",
-      "focused": " "
+      "active": " "
     }
-  },
-  "custom/vpn": {
-    "format": "{}",
-    "interval": 1,
-    "exec": "/bin/waybar-vpn.sh"
-  },
-  "custom/spotify": {
-    "format": "<span foreground='#E5B4E2'>  </span><span font='OperatorMonoSSm Nerd Font weight=325 Italic'>{}</span>",
-    "interval": 1,
-    "exec-if": "pgrep spotify",
-    "on-click": "playerctl -p spotify play-pause",
-    "on-scroll-up": "playerctl -p spotify previous",
-    "on-scroll-down": "playerctl -p spotify next",
-    "tooltip": false,
-    "escape": true,
-    "max-length": 60,
-    "exec": "$HOME/bin/spotify.sh"
   },
   "clock": {
     "format": "<span foreground='#C6AAE8'>  </span>{:%a %d %H:%M}",
@@ -82,5 +64,17 @@
       "car": " ",
       "default": [" ", " "]
     }
-  }
+  },
+  "custom/power": {
+        "format" : "⏻ ",
+		"tooltip": false,
+		"menu": "on-click",
+		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
+		"menu-actions": {
+			"shutdown": "shutdown",
+			"reboot": "reboot",
+			"suspend": "systemctl suspend",
+			"hibernate": "systemctl hibernate"
+		}
+    }
 }
