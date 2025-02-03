@@ -6,6 +6,7 @@ alias cat='bat'
 alias grep='grep --color=auto'
 alias vim='nvim'
 alias vi='nvim'
+alias discord='vesktop'
 
 export MANPAGER='nvim +Man!'
 export VISUAL=nvim
